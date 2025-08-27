@@ -1,24 +1,291 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciudadanía Digital 1: Volcán</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">🧑‍💻</span> <strong>Ciudadanía Digital Misión 1: Volcán</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">👁️</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Comprender la reputación digital y marca personal temprana.</li>
+                                        <li>Analizar cómo nuestras acciones en línea afectan cómo nos ven los demás.</li>
+                                        <li>Definir reputación digital.</li>
+                                        <li>Reconocer ejemplos de impactos positivos y negativos (influencers, figuras públicas, estudiantes).</li>
+                                        <li>Analizar cómo una publicación puede impactar la reputación y reflexionar sobre qué tipo de imagen desean proyectar en Internet.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">Recuerdo Relámpago</strong></li>
+                                        <li><strong class="tactic-highlight">Conexión Ada</strong></li>
+                                        <li><strong class="tactic-highlight">Challenge Express</strong></li>
+                                        <li><strong class="tactic-highlight">Ticket de Salida/Tweet de Aprendizaje</strong></li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Creación en equipo de un ‘Mapa de Reputación’ y una ‘Ruta Alternativa’.</li>
+                                        <li>Creación individual de una "Regla de Oro de la Reputación" (Tweet de Aprendizaje).</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Chat de "Ada" activo y funcionando.</li>
+                                        <li>Presentación de diapositivas.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet.</li>
+                                                <li>Asegurar disponibilidad y carga de los dispositivos físicos (ej. tabletas, ordenadores).</li>
+                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
+                                                <li>Probar el chat "Ada" para asegurar su operatividad.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Recuerdo Relámpago ⏰ 5 minutos</h2>
+                <p>Activar ideas previas sobre las acciones de un buen ciudadano digital de forma rápida y visual.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Recuerdo Relámpago ⏰ 3 minutos</h3>
+                            <p>Proyecta Diapositiva 2. Recuerdo Relámpago: EmojiClave.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Equipo, muy buen día! Bienvenidos a su primera misión oficial de Ciudadanía Digital. A lo largo del año, tendremos estas sesiones especiales dedicadas no a qué construimos con la tecnología, sino a cómo lo hacemos y al impacto que tenemos como creadores. Ser un genio de la tecnología va más allá de saber programar; se trata de ser un líder responsable en el mundo digital. Para empezar, vamos a activar la mente con un reto rápido. En la pantalla ven varios emojis. Piensen en silencio: ¿Cuál de estos emojis representa mejor la acción de ser un buen ciudadano digital? No hay una sola respuesta correcta, lo importante es la razón detrás de su elección.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Recuerdo Relámpago ⏰ 2 minutos</h3>
+                            <p>Realiza una breve reflexión guiada para conectar la dinámica con el tema de la misión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Veo que eligieron emojis que representan pensar, ayudar, proteger... Esas son acciones de un buen ciudadano digital. Hoy vamos a descubrir que esas mismas acciones, cuando las hacemos en línea, construyen algo muy poderoso llamado reputación digital. Es como la fama o la imagen que tenemos en internet. ¿Cómo se construye? ¿Podemos decidir cómo queremos que sea? Vamos a investigarlo.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: Conexión Ada ⏰ 20 minutos</h2>
+                <p>Explorar de forma individual los conceptos de reputación, impacto de publicaciones y ejemplos positivos/negativos.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Conexión Ada ⏰ 0 minutos</h3>
+                            <p>Proyecta Diapositiva 3. Conexión Ada: Misión Volcán.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Ahora es momento de trabajar con Ada. Conéctense a la plataforma e inicien sesión. La clave de activación para la misión de hoy es: Misión Volcán. Escríbanla cuando se las pida. Ada los guiará en esta exploración. Avancen a su propio ritmo. Si tienen alguna duda técnica, aquí estoy para ayudar.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Conexión Ada ⏰ 20 minutos</h3>
+                            <p>Proyecta Diapositiva 4. Timer 20 min.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: Challenge Express ⏰ 10 minutos</h2>
+                <p>Presentar un dilema práctico sobre el impacto de una publicación para contextualizar el reto creativo y analítico.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Challenge Express ⏰ 2 minutos</h3>
+                            <p>Proyecta Diapositiva 5. Challenge Express: Mapa de Reputación.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Atención, tenemos un caso que analizar. Escuchen la historia: Mateo es un chico al que le encantan los videojuegos y es muy bueno creando memes. Un día, después de una partida difícil, crea un meme muy gracioso burlándose de un jugador del equipo contrario que cometió un error clave y lo publica en el chat del grupo. <br>El meme se hace viral. Algunos lo celebran y lo comparten, pero otros, incluyendo amigos del jugador afectado, lo ven como una burla cruel. La reputación de Mateo, que era ‘el chico divertido’, empieza a dividirse. Para algunos es un genio, para otros es un abusón.<br>Este es su reto: En equipos de 3 a 4 integrantes, van a crear un ‘Mapa de Reputación’ para Mateo.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Challenge Express ⏰ 3 minutos</h3>
+                            <p>Pide a los equipos que tomen una hoja, la dividan en dos y llenen los impactos positivos y negativos del meme de Mateo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Tomen una hoja. Divídanla en dos. De un lado, escriban los impactos positivos que tuvo el meme de Mateo (¿Ganó popularidad? ¿Hizo reír a algunos?). Del otro lado, los impactos negativos (¿Lastimó a alguien? ¿Qué imagen proyectó?). Piensen en todas las consecuencias, las visibles y las invisibles. Tienen 3 minutos para llenar su mapa.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Challenge Express ⏰ 3 minutos</h3>
+                            <p>Pide a los equipos que dibujen una ‘Ruta Alternativa’ en la parte de abajo de su mapa.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Ahora, en la parte de abajo de su mapa, van a dibujar una ‘Ruta Alternativa’. ¿Qué podría haber hecho Mateo para ser gracioso sin lastimar a nadie? ¿Podría haber hecho un meme sobre su propio error o sobre algo gracioso del juego en general? Diseñen una acción que construya una reputación positiva para todos. Tienen 3 minutos.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Challenge Express ⏰ 2 minutos</h3>
+                            <p>Pide a los equipos que compartan sus hallazgos y rutas alternativas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Cada equipo compartirá su hallazgo más importante. ¿Qué pesó más, lo positivo o lo negativo? Y lo más importante, ¿cuál fue su Ruta Alternativa? Escuchen las ideas de los demás. Hay muchas formas de ser creativo y respetuoso a la vez.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                <h2>⚡ Actividad 4: Ticket de Salida/Tweet de Aprendizaje ⏰ 5 minutos</h2>
+                <p>Sintetizar el aprendizaje en una regla personal sobre la responsabilidad al publicar.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Ticket de Salida/Tweet de Aprendizaje ⏰ 2 minutos</h3>
+                            <p>Proyecta Diapositiva 9. Tweet de Aprendizaje.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Para cerrar, escriban su propia Regla de Oro de la Reputación. Una frase, un tweet, que resuma su compromiso sobre cómo construir una imagen positiva.<br>Ejemplo del maestro: Mi regla: La mejor broma es la que nos hace reír a todos, no la que se ríe de uno. #ReputaciónPositiva<br>Antes de terminar, quédense con una idea que tenga sentido para ustedes.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ticket de Salida/Tweet de Aprendizaje ⏰ 2 minutos</h3>
+                            <p>Pide a los estudiantes que compartan el tweet con un compañero y escuchen su idea.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Compartan su Regla de Oro con la persona de al lado. Escuchen su regla. ¿En qué se parecen? ¿Qué pueden aprender de su perspectiva? Fortalecer nuestra ética es un trabajo en equipo.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Ticket de Salida/Tweet de Aprendizaje ⏰ 1 minutos</h3>
+                            <p>Proyecta Diapositiva 10. Reflexión final.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Excelente trabajo hoy. Han demostrado que entienden algo fundamental: ser un constructor digital no es solo saber publicar, es tener la sabiduría para pensar en el impacto de cada ladrillo que ponemos. Gracias por tomarse en serio el poder de sus creaciones. Y hablando de reconocer el esfuerzo, es momento de presentarles algo muy importante en el ecosistema Gnius: el sistema Mon-e. Piensen en Mon-e como la moneda virtual oficial de Gnius Club. Es nuestra forma de recompensar su trabajo, su crecimiento y, sobre todo, su responsabilidad. ¿Cómo funciona? Es muy simple:
+
+Primero, ¿Cómo ganan Mon-e?
+
+Por cada misión de tecnología que completen, como las de robótica o programación, ganarán 5 Mon-e.
+Pero aquí viene lo interesante: por cada misión de Ciudadanía Digital como la de hoy, que es fundamental para su formación como líderes, ganarán el doble: 10 Mon-e.
+Además, hay un súper bonus: si en una misión de tecnología todo el grupo logra terminar su proyecto, ¡los puntos se duplican para todos! Pasamos de 5 a 10 Mon-e por ese esfuerzo en equipo.
+
+Segundo, ¿Para qué sirve el Mon-e? El Mon-e que acumulen se puede canjear por algo increíble: horas de impresión 3D. Podrán diseñar y materializar casi cualquier cosa que imaginen, desde un llavero personalizado hasta una figura compleja de su videojuego favorito.
+
+Y tercero, LA REGLA DE ORO, la más importante: Su Mon-e es valioso, pero solo se activa con la responsabilidad. NO podrán canjear su Mon-e si no han completado todas sus lecciones de Ciudadanía Digital. Esto es crucial. Queremos que los creadores más poderosos, aquellos con más Mon-e para crear, sean también los más responsables y éticos.
+
+¡Así que felicidades! Al completar la misión de hoy, acaban de ganar sus primeros 10 Mon-e. ¡Un gran comienzo para su carrera como creadores responsables!”
+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
